@@ -8,7 +8,7 @@ workflows:
           BUNDLE_ID: "com.gdgohan.ShadowShootRemakeAndroid" # <-- Put your Bundle Id here.
           # https://docs.codemagic.io/code-signing-yaml/signing-ios/
 
-            xcode: latest
+        xcode: latest
         cocoapods: default
       triggering:
         events:
