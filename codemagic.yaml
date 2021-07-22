@@ -3,16 +3,16 @@ workflows:
       name: iOS Workflow
       environment:
         vars:
-          XCODE_WORKSPACE: "swiftly.xcworkspace" # <-- Put the name of your workspace here.
-          XCODE_SCHEME: "swiftly" # <-- Put the name of your scheme here.
-          BUNDLE_ID: "io.codemagic.swiftly" # <-- Put your Bundle Id here.
+          XCODE_WORKSPACE: "Runner.xcworkspace" # <-- Put the name of your workspace here.
+          XCODE_SCHEME: "Runner" # <-- Put the name of your scheme here.
+          BUNDLE_ID: "com.gdgohan.ShadowShootRemakeAndroid" # <-- Put your Bundle Id here.
           # https://docs.codemagic.io/code-signing-yaml/signing-ios/
-          APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your encrypted App Store Connect Issuer Id here 
-          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here 
+          APP_STORE_CONNECT_ISSUER_ID: Encrypted(.) # <-- Put your encrypted App Store Connect Issuer Id here 
+          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(..) # <-- Put your encrypted App Store Connect Key Identifier here 
           APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here 
-          CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
-          APPLE_ID_EMAIL: Encrypted(...) # <-- Put your encrypted Apple Id email address here
-          APP_SPECIFIC_PASSWORD: Encrypted(...) # <-- Put your encrypted App Specific password address here
+          CERTIFICATE_PRIVATE_KEY: Encrypted(....) # <-- Put your encrypted Certificate Private Key here 
+          APPLE_ID_EMAIL: Encrypted(.....) # <-- Put your encrypted Apple Id email address here
+          APP_SPECIFIC_PASSWORD: Encrypted(.......) # <-- Put your encrypted App Specific password address here
         xcode: latest
         cocoapods: default
       triggering:
